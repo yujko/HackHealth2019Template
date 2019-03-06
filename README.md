@@ -18,6 +18,7 @@ npm 6.8.0
 ## Installation
 
     git clone https://github.com/yujko/hh2019ui.git
+    cd hh2019ui/static
     npm install
 
 ## Usage
