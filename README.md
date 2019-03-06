@@ -24,6 +24,12 @@ npm 6.8.0
 
 ### static development
 
+    git fetch && git checkout master
+    npm start
+
+### workshop
+
+    git fetch && git checkout plain
     npm start
 
 
@@ -34,14 +40,24 @@ Expect to be Flask based server. TBD.
 
 ## Structures
 
-    /server                  # Should be a directory host Flask
-    /static                  # Static webpages and style, could be used as
+    server/                  # Should be a directory host Flask
+    static/                  # Static webpages and style, could be used as
                              # server templates
-        /images              # store static images
-        /calculator.html     # login-panel like interface
-        /calculator.scss     # css preprocessing scripts, used to add material
+        images/              # store static images
+        _variables.scss      # store variable for all pre processing scss files
+        _common.scss         # store imported packages from material web
+                             # component
+
+        calculator.html      # login-panel like interface
+        calculator.scss      # css preprocessing scripts, used to add material
                              # design style
-        /calculator.js       # add material design
+        calculator.js        # add material design
+        result.*             # listing results
+
+        webpack.config.js    # state how webpack should work
+
+        package.json         # store npm managed packages
+
 
 
 ## Branches
