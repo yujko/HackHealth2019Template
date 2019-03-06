@@ -19,19 +19,6 @@ function getStyleUse(bundleFilename) {
 
 module.exports = [
   {
-    entry: './login.scss',
-    output: {
-      // This is necessary for webpack to compile, but we never reference this js file.
-      filename: 'style-bundle-login.js',
-    },
-    module: {
-      rules: [{
-        test: /login.scss$/,
-        use: getStyleUse('bundle-login.css')
-      }]
-    },
-  },
-  {
     entry: './calculator.scss',
     output: {
       // This is necessary for webpack to compile, but we never reference this js file.
@@ -54,19 +41,6 @@ module.exports = [
       rules: [{
         test: /result.scss$/,
         use: getStyleUse('bundle-result.css')
-      }]
-    },
-  },
-  {
-    entry: "./login.js",
-    output: {
-        filename: "bundle-login.js"
-    },
-    module: {
-      rules: [{
-        test: /login.js$/,
-        loader: 'babel-loader',
-        query: {presets: ['env']}
       }]
     },
   },

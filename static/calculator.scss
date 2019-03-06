@@ -1,1 +1,27 @@
 @import "./common";
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+
+.zipcode,
+.age,
+.household,
+.income {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
