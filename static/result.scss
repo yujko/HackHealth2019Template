@@ -6,7 +6,7 @@
 }
 
 .doctor-list {
-    @include mdc-elevation(4); // Step Elevation: Separate Doctor List
+    // @include mdc-elevation(4); // Step Elevation: Separate Doctor List
 
     @include mdc-image-list-standard-columns(1);
     padding-left: 20px;
@@ -14,14 +14,14 @@
 }
 
 // Step - Layout
-@media (min-width: 599px) {
-  .doctor-list {
-    @include mdc-image-list-standard-columns(2);
-  }
-}
-
-@media (min-width: 800px) {
-  .doctor-list {
-    @include mdc-image-list-standard-columns(3);
-  }
-}
+// @media (min-width: 599px) {
+//   .doctor-list {
+//     @include mdc-image-list-standard-columns(2);
+//   }
+// }
+//
+// @media (min-width: 800px) {
+//   .doctor-list {
+//     @include mdc-image-list-standard-columns(3);
+//   }
+// }
