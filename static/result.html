@@ -8,102 +8,122 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="bundle-result.css">
   </head>
-  <body>
+  <body class="mdc-typography">
 
 
     <section class="header">
         <h1 class="title"> Recommendation </h1>
+        <!-- Step - Typography -->
+        <!-- <h1 class="title mdc-typography--headline1"> Recommendation </h1> -->
     </section>
 
-    <!-- The content of the result panel -->
-    <div class="container">
+    <!-- Step - Layout: Container Grid -->
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
 
-        <ul class="mdc-list mdc-list--two-line">
+            <!-- Step - Layout: Plan Cell -->
+            <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-4-desktop">
 
-          <li class="mdc-list-item" tabindex="0">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">Blue Cross Blue Shield Association</span>
-              <span class="mdc-list-item__secondary-text">Blue Cross Blue Shield Association is a federation of 36 separate United States health insurance organizations and companies, providing health insurance in the United States to more than 106 million people. </span>
-            </span>
-          </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">UnitedHealth Group</span>
-              <span class="mdc-list-item__secondary-text">UnitedHealth Group Inc. is an American for-profit managed health care company based in Minnetonka, Minnesota. As of 2018, it is ranked #5 on the Fortune 500 rankings of the largest United States corporations by total revenue. UnitedHealth Group offers health care products and insurance services.</span>
-            </span>
-          </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">Aetna</span>
-              <span class="mdc-list-item__secondary-text">Aetna Inc. is an American managed health care company that sells traditional and consumer directed health care insurance plans and related services, such as medical, pharmaceutical, dental, behavioral health, long-term care, and disability plans, primarily through employer-paid (fully or partly) insurance and benefit programs, and through Medicare. Since November 28, 2018, the company has been a subsidiary of CVS Health.</span>
-            </span>
-          </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">Cigna</span>
-              <span class="mdc-list-item__secondary-text">Cigna is an American worldwide health services organization based in suburban Bloomfield, Connecticut and Philadelphia, Pennsylvania.</span>
-            </span>
-          </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">Humana</span>
-              <span class="mdc-list-item__secondary-text">Humana Inc. is a for-profit American health insurance company based in Louisville, Kentucky. As of 2014 Humana had over 13 million customers in the U.S., reported a 2013 revenue of US$41.3 billion, and had 51,600 employees.</span>
-            </span>
-          </li>
-          <li class="mdc-list-item">
-            <span class="mdc-list-item__text">
-              <span class="mdc-list-item__primary-text">Kaiser Permanente</span>
-              <span class="mdc-list-item__secondary-text">Kaiser Permanente is an American integrated managed care consortium, based in Oakland, California, United States, founded in 1945 by industrialist Henry J. Kaiser and physician Sidney Garfield.</span>
-            </span>
-          </li>
 
-        </ul>
+                <ul class="mdc-list mdc-list--two-line plan-list">
+
+                  <li class="mdc-list-item" tabindex="0">
+                    <span class="mdc-list-item__text">
+                      <span class="mdc-list-item__primary-text">Blue Cross Blue Shield Association</span>
+                      <span class="mdc-list-item__secondary-text">Blue Cross Blue Shield Association is a federation of 36 separate United States health insurance organizations and companies, providing health insurance in the United States to more than 106 million people. </span>
+                    </span>
+                  </li>
+
+                  <li role="separator" class="mdc-list-divider"></li>
+
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      <span class="mdc-list-item__primary-text">UnitedHealth Group</span>
+                      <span class="mdc-list-item__secondary-text">UnitedHealth Group Inc. is an American for-profit managed health care company based in Minnetonka, Minnesota. As of 2018, it is ranked #5 on the Fortune 500 rankings of the largest United States corporations by total revenue. UnitedHealth Group offers health care products and insurance services.</span>
+                    </span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      <span class="mdc-list-item__primary-text">Aetna</span>
+                      <span class="mdc-list-item__secondary-text">Aetna Inc. is an American managed health care company that sells traditional and consumer directed health care insurance plans and related services, such as medical, pharmaceutical, dental, behavioral health, long-term care, and disability plans, primarily through employer-paid (fully or partly) insurance and benefit programs, and through Medicare. Since November 28, 2018, the company has been a subsidiary of CVS Health.</span>
+                    </span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      <span class="mdc-list-item__primary-text">Cigna</span>
+                      <span class="mdc-list-item__secondary-text">Cigna is an American worldwide health services organization based in suburban Bloomfield, Connecticut and Philadelphia, Pennsylvania.</span>
+                    </span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      <span class="mdc-list-item__primary-text">Humana</span>
+                      <span class="mdc-list-item__secondary-text">Humana Inc. is a for-profit American health insurance company based in Louisville, Kentucky. As of 2014 Humana had over 13 million customers in the U.S., reported a 2013 revenue of US$41.3 billion, and had 51,600 employees.</span>
+                    </span>
+                  </li>
+                  <li class="mdc-list-item">
+                    <span class="mdc-list-item__text">
+                      <span class="mdc-list-item__primary-text">Kaiser Permanente</span>
+                      <span class="mdc-list-item__secondary-text">Kaiser Permanente is an American integrated managed care consortium, based in Oakland, California, United States, founded in 1945 by industrialist Henry J. Kaiser and physician Sidney Garfield.</span>
+                    </span>
+                  </li>
+                </ul>
+            </div><!-- Step - Layout: End of Plan Cell -->
+
+
+            <!-- Step - Layout: Doctors Cell -->
+            <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-8-desktop">
+                <ul class="mdc-image-list doctor-list">
+
+                    <li class="mdc-image-list__item">
+                      <img class="mdc-image-list__image" src="images/doctor-1.jpg">
+                      <div class="mdc-image-list__supporting">
+                        <span class="mdc-image-list__label">Dr. John</span>
+                      </div>
+                    </li>
+
+                    <li class="mdc-image-list__item">
+                      <img class="mdc-image-list__image" src="images/doctor-2.jpg">
+                      <div class="mdc-image-list__supporting">
+                        <span class="mdc-image-list__label">Dr. Christine</span>
+                      </div>
+                    </li>
+
+                    <li class="mdc-image-list__item">
+                      <img class="mdc-image-list__image" src="images/doctor-3.jpg">
+                      <div class="mdc-image-list__supporting">
+                        <span class="mdc-image-list__label">Dr. Andrew</span>
+                      </div>
+                    </li>
+
+                    <li class="mdc-image-list__item">
+                      <img class="mdc-image-list__image" src="images/doctor-1.jpg">
+                      <div class="mdc-image-list__supporting">
+                        <span class="mdc-image-list__label">Dr. David</span>
+                      </div>
+                    </li>
+
+                    <li class="mdc-image-list__item">
+                      <img class="mdc-image-list__image" src="images/doctor-2.jpg">
+                      <div class="mdc-image-list__supporting">
+                        <span class="mdc-image-list__label">Dr. Elly</span>
+                      </div>
+                    </li>
+
+                    <li class="mdc-image-list__item">
+                      <img class="mdc-image-list__image" src="images/doctor-3.jpg">
+                      <div class="mdc-image-list__supporting">
+                        <span class="mdc-image-list__label">Dr. Frank</span>
+                      </div>
+                    </li>
+
+                </ul>
+            <!-- </div> -->
+            <!-- Step - Layout: End of Doctors Cell -->
+
+
+        </div>
     </div>
-
-      <div>
-    <ul class="mdc-image-list doctor-list">
-
-      <li class="mdc-image-list__item">
-        <img class="mdc-image-list__image" src="images/doctor-1.jpg">
-        <div class="mdc-image-list__supporting">
-          <span class="mdc-image-list__label">Dr. John</span>
-        </div>
-      </li>
-
-      <li class="mdc-image-list__item">
-        <img class="mdc-image-list__image" src="images/doctor-2.jpg">
-        <div class="mdc-image-list__supporting">
-          <span class="mdc-image-list__label">Dr. Christine</span>
-        </div>
-      </li>
-
-      <li class="mdc-image-list__item">
-        <img class="mdc-image-list__image" src="images/doctor-3.jpg">
-        <div class="mdc-image-list__supporting">
-          <span class="mdc-image-list__label">Dr. Andrew</span>
-        </div>
-      </li>
-
-      <li class="mdc-image-list__item">
-        <img class="mdc-image-list__image" src="images/doctor-1.jpg">
-        <div class="mdc-image-list__supporting">
-          <span class="mdc-image-list__label">Dr. David</span>
-        </div>
-      </li>
-
-      <li class="mdc-image-list__item">
-        <img class="mdc-image-list__image" src="images/doctor-2.jpg">
-        <div class="mdc-image-list__supporting">
-          <span class="mdc-image-list__label">Dr. Elly</span>
-        </div>
-      </li>
-
-      <li class="mdc-image-list__item">
-        <img class="mdc-image-list__image" src="images/doctor-3.jpg">
-        <div class="mdc-image-list__supporting">
-          <span class="mdc-image-list__label">Dr. Frank</span>
-        </div>
-      </li>
+    <!-- Step Layout: End of Container Grid -->
 
 
 

@@ -1,8 +1,19 @@
-// $mdc-theme-primary: #FEDBD0;
-// $mdc-theme-on-primary: #442C2E;
-// $mdc-theme-secondary: #FEEAE6;
-// $mdc-theme-on-secondary: #442C2E;
-// $mdc-theme-surface: #FFFBFA;
-// $mdc-theme-on-surface: #442C2E;
-// $mdc-theme-background: #FFFFFF;
-// $mdc-theme-on-background: #442C2E;
+// Step - Color: Add Your Color
+$mdc-theme-primary: #e91e63;       // Color for focus font, elements
+$mdc-theme-on-primary: #b0003a;
+$mdc-theme-secondary: #ffc107;     // Different, perhaps minor elements
+$mdc-theme-on-secondary: #c79100;
+$mdc-theme-surface: #FFFBFA;
+$mdc-theme-on-surface: #b0003a;
+$mdc-theme-background: #FFFFFF;
+$mdc-theme-on-background: #b0003a;
+
+// Step - typography
+$mdc-typography-font-family: "Arial, Helvetica, sans-serif";
+$mdc-typography-styles-headline1: (
+  font-family: unquote("Arial, Helvetica, sans-serif")
+);
+$mdc-typography-styles-headline2: (
+  font-family: unquote("Arial, Helvetica, sans-serif"),
+  font-size: 3.25rem
+);

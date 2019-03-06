@@ -1,4 +1,13 @@
 @import "./common";
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+
+.login {
+    // Step - Color: Setup Back Ground Color
+    background-color: $mdc-theme-background;
+    color: $mdc-theme-on-background;
+}
 
 .logo {
     width: 150px;
@@ -10,8 +19,16 @@
 .age,
 .household,
 .income {
+    // Step - Color: Setup Font Color
+    &:not(.mdc-text-field--invalid) {
+      @include mdc-text-field-label-color(on-primary);
+    }
+    &.mdc-text-field--focused:not(.mdc-text-field--invalid)  {
+      @include mdc-text-field-label-color(on-primary);
+    }
+
     display: block;
-    margin: auto;
+    margin: 20px auto;
     width: 300px;
 }
 
@@ -24,4 +41,15 @@
 
 .header {
     text-align: center;
+}
+
+.cancel {
+    // Step - Color: Setup Button Color
+    @include mdc-button-ink-color(on-primary);
+}
+
+.submit {
+    // Step - Color: Setup Button Color
+    @include mdc-button-container-fill-color(on-secondary);
+    @include mdc-button-ink-color(surface);
 }

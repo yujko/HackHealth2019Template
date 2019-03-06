@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="bundle-calculator.css">
   </head>
-  <body class="mdc-typography">
+  <body class="mdc-typography login">
 
       <section class="header">
           <img src="images/icon.svg" weight="150px" height="150px" alt="Healthcare Plan">
           <h1 class="title">Find Your Healthcare Plan</h1>
+          <!-- Step - Typography -->
+          <!-- <h1 class="title mdc-typography--headline1">Find Your Healthcare Plan</h1> -->
+
       </section>
- 
+
 
     <div class="container">
 
-        <!-- The content of the selection panel -->
-        <!-- static action: result.html -->
-        <!-- server action: result -->
-
-        <div class="card calculator-panel">
+        <div class="calculator-panel">
 
 
-            <div class="card-body">
+            <div class="">
                 <form action="result.html" method="get" accept-charset="utf-8">
                     <div class="mdc-text-field zipcode">
                       <label class="mdc-floating-label" for="zipcode-input">Zip Code</label>
@@ -44,13 +43,17 @@
                           </select>
                       <label class="mdc-floating-label" for="household-input">Household Size</label>
                     </div>
-            <div class="mdc-text-field income">
-              <label class="mdc-floating-label" for="income-input">Income</label>
-              <input type="text" class="mdc-text-field__input" id="income-input" >
-            </div>
-            <div class="button-container">
-                <button type="submit" class="mdc-button">Submit</button>
-            </div>
+                    <div class="mdc-text-field income">
+                      <label class="mdc-floating-label" for="income-input">Income</label>
+                      <input type="text" class="mdc-text-field__input" id="income-input" >
+                    </div>
+                    <div class="button-container">
+                        <button type="button" class="mdc-button cancel">
+                          Cancel
+                        </button>
+                        <button type="submit" class="mdc-button submit">Submit</button>
+                    </div>
+
 
                 </form>
             </div>
