@@ -1,1 +1,14 @@
 @import "./common";
+
+
+.header {
+    text-align: center;
+}
+
+.doctor-list {
+    @include mdc-image-list-standard-columns(1);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
