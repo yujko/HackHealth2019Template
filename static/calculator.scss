@@ -5,8 +5,8 @@
 
 .login {
     // Step - Color: Setup Back Ground Color
-    // background-color: $mdc-theme-background;
-    // color: $mdc-theme-on-background;
+    background-color: $mdc-theme-background;
+    color: $mdc-theme-on-background;
 }
 
 .logo {
@@ -20,12 +20,12 @@
 .household,
 .income {
     // Step - Color: Setup Font Color
-    // &:not(.mdc-text-field--invalid) {
-    //   @include mdc-text-field-label-color(on-primary);
-    // }
-    // &.mdc-text-field--focused:not(.mdc-text-field--invalid)  {
-    //   @include mdc-text-field-label-color(on-primary);
-    // }
+    &:not(.mdc-text-field--invalid) {
+      @include mdc-text-field-label-color(on-primary);
+    }
+    &.mdc-text-field--focused:not(.mdc-text-field--invalid)  {
+      @include mdc-text-field-label-color(on-primary);
+    }
 
     display: block;
     margin: 20px auto;
@@ -45,11 +45,11 @@
 
 .cancel {
     // Step - Color: Setup Button Color
-    // @include mdc-button-ink-color(on-primary);
+    @include mdc-button-ink-color(on-primary);
 }
 
 .submit {
     // Step - Color: Setup Button Color
-    // @include mdc-button-container-fill-color(on-secondary);
-    // @include mdc-button-ink-color(surface);
+    @include mdc-button-container-fill-color(on-secondary);
+    @include mdc-button-ink-color(surface);
 }
